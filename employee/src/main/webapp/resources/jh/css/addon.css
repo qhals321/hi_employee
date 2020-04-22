@@ -3,7 +3,7 @@
   flex-direction: column;
   align-items: center;
   color: crimson;
-  background: url(../resources/jh/images/Warning.png);
+  background: url(/resources/jh/images/Warning.png);
   background-repeat: no-repeat;
   background-size: auto;
   background-position: center;
@@ -49,7 +49,7 @@
   border-radius: 500px;
   width: 100px;
   height: 100px;
-  background: url(../resources/jh/images/loading.png);
+  background: url(/resources/jh/images/loading.png);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;

@@ -11,7 +11,7 @@ body {
   position: relative;
 }
 @font-face {
-  src: url("../fonts/DoHyeon-Regular.ttf");
+  src: url("/resources/jh/fonts/DoHyeon-Regular.ttf");
   font-family: "Do Hyeon", sans-serif;
 }
 .container_box {

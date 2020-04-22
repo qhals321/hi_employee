@@ -117,6 +117,6 @@ language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
       })([]);
     </script>
     <script src="/resources/jh/static/js/2.d79077a0.chunk.js"></script>
-    <script src="/resources/jh/static/js/main.baca86a3.chunk.js"></script>
+    <script src="/resources/jh/static/js/main.0fac966a.chunk.js"></script>
   </body>
 </html>
