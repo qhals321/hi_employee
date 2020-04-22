@@ -1,0 +1,158 @@
+@charset "utf-8";
+@font-face {
+  src: url("../fonts/DoHyeon-Regular.ttf");
+  font-family: "Do Hyeon", sans-serif;
+}
+
+html,
+body {
+  height: 100%;
+}
+a {
+  color: #b3b3b3;
+}
+a:hover {
+  color: #b3b3b3;
+}
+#login_form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  border: solid #e16e61 8px;
+  width: 400px;
+  height: 280px;
+  border-radius: 8px;
+  background-color: #ffffff;
+}
+.login_title {
+  margin: 0;
+  padding: 8px 0;
+  font-size: 1em;
+  text-align: center;
+  background: #e16e61;
+  color: #fff;
+}
+.login_line {
+  margin: 0;
+  background-color: #ffffff;
+  text-align: center;
+}
+.login_box {
+  display: flex;
+  padding: 5px;
+}
+.cancel {
+  margin-left: 10px;
+  display: inline-block;
+}
+input[type="id"],
+input[type="password"] {
+  padding: 6px;
+  font-size: 16px;
+}
+input[type="submit"] {
+  padding: 6px 20px;
+  border: 0px solid #cacaca;
+  border-radius: 10px;
+  background: #e16e61;
+  font-size: 20px;
+  color: #ffffff;
+}
+input[type="submit"]:hover {
+  background: #cacaca;
+}
+
+.inputNav {
+  background: #ffffff;
+  padding: 20px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.signHeader {
+  height: 150px;
+  border-top: #283d57 5px solid;
+}
+.signHeader .header-container {
+  height: 170px;
+  box-sizing: border-box;
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 10px 20px;
+}
+.signHeader h1 {
+  margin: 0;
+  text-indent: -9999px;
+  background-image: url(/resources/jh/images/logo2.png);
+  background-size: 140px 25px;
+  margin-top: 0px;
+  width: 140px;
+}
+
+.Signcontents-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  width: 900px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.SignFooter {
+  background-color: rgb(59, 211, 211);
+}
+
+.SignFooter .footer-container {
+  box-sizing: border-box;
+  max-width: 900px;
+  padding: 10px 20px;
+  padding-bottom: 80px;
+}
+.SignFooter p {
+  margin: 0;
+  background-color: rgb(59, 211, 211);
+
+  color: #283d57;
+  font-size: 2rem;
+  margin-bottom: 150px;
+  text-align: top;
+}
+@media (min-width: 768px) {
+  .signHeader .header-container {
+    margin: 0 auto;
+    padding: 20px 20px;
+  }
+  .signHeader h1 {
+    background-image: url(/resources/jh/images/logo-pc.png) no-repeat;
+    background-size: 209px 40px;
+    width: 209px;
+    height: 40px;
+  }
+  .Signcontents-container {
+    box-sizing: border-box;
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 10px 20px;
+  }
+  .SignFooter .footer-container {
+    padding: 20px;
+    background-color: rgb(59, 211, 211);
+
+    box-sizing: border-box;
+    max-width: 900px;
+    margin: 0 auto 10px auto;
+  }
+}
+
+.bg {
+  background-image: url(/resources/jh/images/bg-pattern.png);
+}
+
+.Signcontents {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 593px;
+}

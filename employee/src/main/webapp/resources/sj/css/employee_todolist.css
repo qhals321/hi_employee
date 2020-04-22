@@ -1,0 +1,315 @@
+@charset "utf-8";
+@font-face{
+    src: url("/resources/sj/fonts/DoHyeon-Regular.ttf");
+    font-family: 'Do Hyeon', sans-serif;
+}
+html * {
+    box-sizing: border-box;
+    font-family: 'Do Hyeon', sans-serif;
+}
+body {
+    margin: 0;
+    background: #ffffff;
+}
+.sidebar {
+	position: fixed;
+	width: 340px;
+	height: 100%;
+	padding: 50px 20px;
+	background: #e16e61;
+	overflow: hidden;
+}
+.maincontents {
+	margin-left: 340px;
+	padding: 20px;
+}
+.header-logo {
+	margin: 0;
+	width: 300px;
+	height: 44px;
+	background-image: url(/resources/sj/images/logo.png);
+	background-repeat: no-repeat;
+	text-indent: -9999px;
+}
+.check{
+	width: 300px;
+	margin-top: 30px;
+}
+li.checkIn{
+	list-style: none;
+	color: #fff;
+	font-size: 25px;
+	float: left;
+	margin-right: 20px;
+	margin-left: -30px;
+	padding: 20px 45px;
+	background: #a3c675;
+}
+li.checkOut{
+	float: left;
+	list-style: none;
+	color: #fff;
+	font-size: 25px;
+	padding: 20px 45px;
+	background: #f9b948;
+}
+.employeeSelectAll{
+	float: left;
+	width: 280px;
+	margin-top: 20px;
+	color: #fff;
+	padding-bottom: 0;
+	background-color: #75cbd1;
+	margin-left: 10px;
+}
+.employeeSelectAll>p{
+	line-height: 100%;
+	text-align: center;
+}
+.employeeSelect{
+	float: left;
+	width: 280px;
+	margin: 0;
+	font-size: 20px;
+	color: #575757;
+}
+.globalnav {
+	margin-top: 150px;
+	padding: 50px 0 0 0;
+	list-style: none;
+}
+.globalnav li {
+	margin: 0 0 10px 0;
+}
+.globalnav li a {
+	display: block;
+	padding: 10px 20px;
+	border-bottom: 2px solid #ffffff;
+	text-decoration: none;
+    color: #ffffff;
+    font-size: 20px;
+}
+.globalnav li a:hover,
+.globalnav li a.current {
+	border-bottom: 2px solid #a3c675;
+	color: #a3c675;
+}
+.profile {
+	font-size: 0;
+}
+.profile img {
+	width: 1530px;
+	height: 400px;
+}
+#todo_form{
+	margin: 3em auto;
+	border: 3px solid #f9b948;
+	width: 1530px;
+	margin-left: -20px;
+	
+	margin-top: -10px;
+	padding: 0;
+}
+.todo_title{
+	padding: 20px;
+	background: #f9b948;
+	margin: 0;
+	color: #535353;
+}
+.todo_line{
+	float: left;
+	border: 2px solid #dadada;
+	margin-top: 3px;
+	margin-left: -3px;
+	padding-right: 471px;
+}
+.todolist_contents{
+	margin: 0;
+	padding: 20px;
+	text-align: center;
+	display: flex;
+}
+input[type="todo_list"], input[type="done_list"]{
+	padding: 0;
+	font-size: 20px;
+	border-style: none;
+}
+
+
+.maincopy {
+	margin: 0;
+	padding: 30px 0;
+	text-align: center;
+    font-size: 30px;
+    color: #575757;
+    font-weight: bold;
+}
+
+.notice{
+	position: fixed;
+	left: 0;
+	bottom: 0;
+	padding: 30px;
+	width: 100%;
+	background-color: #f9b948;
+	box-shadow: 0 -4px 5px rgba(0, 0, 0, 0.5);
+}
+.notice p{
+	margin: 0;
+	text-align: center;
+	font-size: 20px;
+	font-weight: bold;
+	color: #fff;
+}
+.notice-btn{ 
+	display: inlin-block;
+	margin: 0 0 0 10px;
+	padding: 5px 20px;
+	background-color: #fff;
+	border-radius: 5px;
+	font-weight: bold;
+	color: #e37063;
+}
+.notice a{
+    text-decoration: none;
+}
+
+@charset "utf-8";
+@font-face{
+    src: url("fonts/DoHyeon-Regular.ttf");
+    font-family: 'Do Hyeon', sans-serif;
+}
+.calendar-wrapper {
+   width: 400px;
+}
+.calendar {
+   table-layout: fixed;
+   width: 100%;
+   border-collapse: collapse;   
+   border: 1px solid #cdcdcd;   
+}
+.calendar th,
+.calendar td {
+   padding: 10px 0;
+   border: 1px solid #cdcdcd;
+   text-align: center;
+   vertical-align: middle;
+   font-size: 14px;
+   color: #777777;
+}
+.calendar td:hover{
+   cursor:pointer;
+   background-color: #bbd894;
+}
+.calendar th {
+   background-color: #dedede;
+}
+.calendar th:first-child {
+   background-color: #e16e61;
+   color: #ffffff;
+}
+.calendar td:first-child {
+   color: #e05557;
+}
+.calendar th:last-child {
+   background-color: #a3c675;
+   color: #ffffff;
+}
+.calendar td:last-child {
+   color: #a3c675;
+}
+.holiday {
+   color: #e05557;
+}
+.calendar caption {
+   margin: 0 0 10px 0;
+   padding: 10px;
+   font-size: 25px;
+   border: 5px solid #dedede;
+   border-radius: 30px;
+   font-weight: bold;   
+   color: #777777;
+}
+
+
+input[type="checkbox"] {
+    display:none;
+}
+input[type="checkbox"] + label span {
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    margin: -2px 10px 0 0;
+    vertical-align: middle;
+    background: url(checkbox.svg) left top no-repeat;
+    cursor: pointer;
+    background-size: cover;
+}
+input[type="checkbox"]:checked + label span {
+    background:url(checkbox.svg)  -26px top no-repeat;
+    background-size: cover;
+}
+
+
+
+
+
+
+
+
+.todolist-wrapper {
+   width: 400px;
+   height: 500px;
+   box-size: border-box;
+}
+.todolist {
+   table-layout: fixed;
+   width: 100%;
+   border-collapse: collapse;   
+   border: 1px solid #cdcdcd;   
+}
+.todolist th,
+.todolist td {
+   padding: 10px 0;
+   border: 1px solid #cdcdcd;
+   text-align: center;
+   vertical-align: middle;
+   font-size: 14px;
+   color: #777777;
+}
+.todolist td {
+	height: 185px;
+}
+.todolist td:hover{
+   cursor:pointer;
+   background-color: #bbd894;
+}
+.todolist th {
+   background-color: #dedede;
+}
+.todolist th:first-child {
+   background-color: #e16e61;
+   color: #ffffff;
+}
+.todolist td:first-child {
+   color: #e05557;
+}
+.todolist th:last-child {
+   background-color: #a3c675;
+   color: #ffffff;
+}
+.todolist td:last-child {
+   color: #a3c675;
+}
+.todolist caption {
+   margin: 0 0 10px 0;
+   padding: 8px;
+   font-size: 25px;
+   border: 5px solid #dedede;
+   border-radius: 30px;
+   font-weight: bold;   
+   color: #777777;
+}
+label{
+	height: 300px;
+}

@@ -1,0 +1,79 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.hide {
+  position: absolute;
+  left: -5000px;
+}
+body {
+  position: relative;
+}
+@font-face {
+  src: url("../fonts/DoHyeon-Regular.ttf");
+  font-family: "Do Hyeon", sans-serif;
+}
+.container_box {
+  position: absolute;
+  text-align: center;
+  display: flex;
+  height: 100%;
+}
+.container_box li {
+  display: inline-block;
+}
+.container_box li {
+  display: block;
+  height: 100vh;
+  line-height: 100vh;
+  padding: 0 320px;
+}
+.left {
+  background-color: #e37063;
+  display: inline-block;
+  text-align: center;
+  width: 50%;
+  height: 100vh;
+  margin: 0;
+}
+.left li {
+  display: inline-block;
+  text-align: center;
+}
+.left a {
+  text-decoration: none;
+  display: block;
+  font-size: 150px;
+  color: #fff;
+}
+.left li a:hover {
+  color: #723842;
+}
+.left li a span {
+  position: relative;
+}
+.right {
+  display: inline-block;
+  background-color: #6f6e86;
+  text-align: center;
+  width: 50%;
+  height: 100vh;
+  margin: 0;
+}
+.right li {
+  display: inline-block;
+  text-align: center;
+}
+.right a {
+  text-decoration: none;
+  display: block;
+  font-size: 150px;
+  color: #fff;
+}
+.right li a:hover {
+  color: #36486d;
+}
+.right li a span {
+  position: relative;
+}

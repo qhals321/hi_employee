@@ -1,0 +1,304 @@
+@charset "utf-8";
+
+table {
+	border-collapse: collapse;
+	width: 1500px;
+	text-align: center;
+	margin-left: 120px;
+	margin-right: 50px;
+	margin-top: 50px;
+}
+td, th {
+	padding: 20px 20px;
+	border: 1px solid #b7b7b7;
+}
+td:nth-child(4), td:nth-child(6) {
+	text-align: right;
+}
+thead {
+	background: #a3c675;
+	color: #fff;
+}
+tbody tr:nth-child(2n) {
+	background: #ecfafc;
+}
+html {
+	font-size: 20px;
+}
+tr:hover{
+	cursor: default;
+	background: #c0e690;
+}
+
+@media screen and (min-width: 768px) {
+	html {
+		font-size: 18px;
+	}
+}
+html * {
+	box-sizing: border-box;
+}
+body {
+	margin: 0;
+	background: url(/resources/sj/images/bg.png);
+	font-family: 'Do Hyeon', sans-serif;	
+}
+/* 스크롤 고정 */
+.header-nav-wrapper{
+	position: fixed;
+	z-index: 10;
+	left: 0;
+	top:0;
+	width: 100%;
+	background: #e37063;	
+}
+.main-wrapper{
+	position: absolute;
+	z-index: 0;
+	left: 0;
+	top: 128px;
+	width: 100%;
+}
+header {
+	background: #e37063;
+}
+.header-container {
+	padding: 30px 20px 10px 20px;
+}
+.header-logo {
+	margin: 0;
+	width: 300px;
+	height: 40px;
+	background-image: url(/resources/sj/images/logo.png);
+	background-size: 300px 40px;
+	background-repeat: no-repeat;
+	text-indent: -9999px;
+}
+@media screen and (min-width: 768px) {
+	.header-logo {
+		width: 300px;
+		height: 44px;
+		background-size: 300px 44px;
+	}
+}
+nav {
+	font-size: 0.78rem;
+	background: #e37063;
+}
+@media screen and (min-width: 768px) {
+	nav {
+		font-size: 1rem;
+	}
+}
+.nav-container {
+	padding: 0 20px 0 20px;
+}
+.globalnav {
+	display: flex;
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+.globalnav li {
+	flex: 0 0 20%;	
+}
+.globalnav li a {
+	display: block;
+	padding: 10px 0;
+	border-bottom: 8px solid #ffffff;
+	text-decoration: none;
+	text-align: center;
+	font-size: 25px;
+	line-height: 100%;
+	color: #ffffff;
+}
+.globalnav li a:hover,
+.globalnav li a.current {
+	border-bottom: 8px solid #a3c675;
+	color: #a3c675;
+}
+.main-contents {
+}
+.main-contents-container {
+	height: 100%;
+	padding: 0 0 600px 0;
+	background: #ffffff;
+}
+.column1 {
+	margin: 0 20px 0 20px;
+	padding: 30px 0 30px 0;
+}
+.column2 {
+	margin: 0 20px 0 20px;
+	padding: 30px 0 30px 0;
+}
+.column3 {
+	margin: 0 20px 0 20px;
+	padding: 30px 0 30px 0;
+}
+@media screen and (min-width: 768px) {
+	.main-contents {
+	}
+	.main-contents-container {
+		display: flex;
+	}
+	.column1 {
+		margin: 0 20px 0 20px;
+		flex: 0 0 240px;
+	}
+	.column2 {
+		margin: 0 20px 0 0;
+		flex: 1 1 auto;
+	}
+	.column3 {
+		margin: 0 50px 0 50px;
+		flex: 0 0 180px;
+	}
+}
+
+/* column1 */
+.column1 h1 {
+	margin: 0 0 20px 0;
+	font-size: 1.4rem;
+	color: #a3c675;
+}
+.subnav {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	border-top: 3px dashed #dadada;
+}
+.subnav li {
+	padding: 10px;
+	border-bottom: 3px dashed #dadada;
+}
+.subnav li a {
+	text-decoration: none;
+	font-size: 20px;
+	color: #696969;
+}
+.subnav li a:hover,
+.subnav li a.current {
+	color: #a3c675;
+}
+@media screen and (min-width: 768px) {
+	.column1 h1 {
+		font-size: 2rem;
+	}
+	.subnav li {
+		padding: 20px;
+	}
+}
+
+/* column2 */
+.news h2 {
+	margin: 0 0 20px 0;
+	font-size: 30px;
+	color: #696969;
+}
+.news-contents {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	font-size: 18px;
+}
+.news-contents li {
+	overflow: hidden;
+	margin: 0 0 20px 0;
+	padding: 30px;
+	border: 3px solid #dadada;
+}
+.news-contents li:last-child{
+	margin: 0;
+}
+.news-contents li img {
+	float: left;
+	margin-right: 50px;
+	width: 150px;
+	height: 150px;
+}
+.news-contents li p {
+	margin: 0;
+	font-size: 20px;
+	color: #696969;
+}
+
+/* column3 */
+.column3 {
+	padding-top: 50px;
+}
+.map h2 {
+	margin: 0;
+	padding: 10px;
+	background-color: #a3c675;
+	font-size: 25px;
+	text-align: center;
+	color: #fff;
+}	
+.map-image {
+	margin: 0 0 20px 0;
+	font-size: 0;
+}
+.map-image img {
+	width: 100%;
+}
+.map p {
+	margin: 0;
+	font-size: 16px;
+	color: #696969;
+	border: 1px solid #dadada;
+}
+.area-container{
+
+}
+.area{
+	margin-bottom: 10px;
+	padding: 30px 0;
+	width: 300px;
+}
+.area p{
+	margin: 0;
+	text-align: center;
+	color: #ffff;
+}
+.gangnam{
+	background-color: #e37063;
+}
+.yeongdeungpo{
+	background-color: #a3c675;
+}
+.shillim{
+	background-color: #f9b948;
+}
+.incheon{
+	background-color: #6e6d85;
+}
+.shillim{
+	background-color: #75cbd1;
+}
+
+.notice{
+	position: fixed;
+	left: 0;
+	bottom: 0;
+	padding: 30px;
+	width: 100%;
+	background-color: #e37063;
+	box-shadow: 0 -4px 5px rgba(0, 0, 0, 0.5);
+}
+.notice p{
+	margin: 0;
+	text-align: center;
+	font-size: 20px;
+	font-weight: bold;
+	color: #fff;
+}
+.notice-btn{ 
+	display: inlin-block;
+	margin: 0 0 0 10px;
+	padding: 5px 20px;
+	background-color: #fff;
+	border-radius: 5px;
+	font-weight: bold;
+	color: #e37063;
+}
