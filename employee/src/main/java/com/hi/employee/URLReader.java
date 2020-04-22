@@ -49,7 +49,7 @@ public URLReader() {
 	  public JSONObject getFingerEnroll(EmployeeVO employee) throws JSONException, IOException {
 		  int id = employee.getEmId();
 		  System.out.println("지문등록 시작");
-		  JSONObject json=readJsonFromUrl("http://192.168.1.26:8888/api/finger/enroll/?id="+id);
+		  JSONObject json=readJsonFromUrl("http://192.168.1.17:8888/api/finger/enroll/?id="+id);
 		  System.out.println(json.toString());
 		  System.out.println("result 값은 : "+json.get("result"));
 		  return json;
@@ -58,7 +58,7 @@ public URLReader() {
 	  public JSONObject getFingerVerify() throws JSONException, IOException {
 
 		  System.out.println("지문등록 시작");
-		  JSONObject json=readJsonFromUrl("http://192.168.1.26:8888/api/finger/verify/");
+		  JSONObject json=readJsonFromUrl("http://192.168.1.17:8888/api/finger/verify/");
 		  System.out.println(json.toString());
 		  System.out.println("id 값은 : "+json.get("uid"));
 		  return json;
@@ -69,7 +69,7 @@ public URLReader() {
 		  int id=employee.getEmId();
 
 		  System.out.println("지문등록 시작");
-		  JSONObject json = readJsonFromUrl("http://192.168.1.26:8888/api/finger/update/?id="+id);
+		  JSONObject json = readJsonFromUrl("http://192.168.1.17:8888/api/finger/update/?id="+id);
 		  System.out.println(json.toString());
 		  System.out.println("result 값은 : "+json.get("result"));
 		  return json;

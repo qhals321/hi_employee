@@ -1,6 +1,6 @@
 @charset "utf-8";
 @font-face {
-  src: url("/resources/jh/fonts/DoHyeon-Regular.ttf");
+  src: url("../fonts/DoHyeon-Regular.ttf");
   font-family: "Do Hyeon", sans-serif;
 }
 

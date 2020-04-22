@@ -1,6 +1,3 @@
-<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %> <%@ page
-language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
-
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -117,6 +114,6 @@ language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
       })([]);
     </script>
     <script src="/resources/jh/static/js/2.d79077a0.chunk.js"></script>
-    <script src="/resources/jh/static/js/main.0fac966a.chunk.js"></script>
+    <script src="/resources/jh/static/js/main.5424ff90.chunk.js"></script>
   </body>
 </html>
